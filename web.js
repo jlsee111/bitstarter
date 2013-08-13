@@ -1,7 +1,7 @@
 //var express = require('express');
 
 var fs=require('fs');
-fs.readFile("index2.html", function(err,data){
+fs.readFile(path.join(process.cwd(), 'index2.html'), function(err,data){
 	if(err) throw err;
 	console.log(data.toString());
 
